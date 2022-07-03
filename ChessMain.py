@@ -22,7 +22,7 @@ def load_images():
     pieces = ['wp', 'bp', 'wR', 'bR', 'wN', 'bN', 'wB', 'bB', 'wK', 'bK', 'wQ', 'bQ']
 
     for piece in pieces:
-        image_path = r'C:\Users\TranCongThinh\Desktop\New folder\image\{}.png'.format(piece)
+        image_path = r'image\{}.png'.format(piece)
         IMAGES[piece] = p.transform.scale(p.image.load(image_path), (SQ_SIZE, SQ_SIZE))
         
         
